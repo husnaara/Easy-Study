@@ -1,0 +1,63 @@
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center">
+
+    <View
+        android:id="@+id/top_view"
+        android:layout_width="150dp"
+        android:layout_marginTop="80dp"
+        android:layout_height="150dp"
+        android:background="@drawable/img_3" />
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="20dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    tools:context=".DeleteSubjectActivity">
+
+
+
+    <TextView
+        android:id="@+id/deleteSubjectTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete Subject"
+        android:textSize="24sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/subjectNameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/deleteSubjectTextView"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:hint="Enter subject name"/>
+
+    <Button
+        android:id="@+id/deleteButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/subjectNameEditText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/purple"
+        android:text="Delete Subject"/>
+</RelativeLayout>
+    </ScrollView>
+    </LinearLayout>

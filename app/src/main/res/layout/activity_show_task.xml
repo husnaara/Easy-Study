@@ -1,0 +1,51 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".showTaskActivity">
+
+    <View
+        android:id="@+id/top_view"
+        android:layout_width="100dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="170dp"
+        android:layout_height="100dp"
+        android:background="@drawable/img_5" />
+
+    <TextView
+        android:id="@+id/show_tasks_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show Task"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="200dp"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:id="@+id/taskListContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <EditText
+                android:id="@+id/editTextTask"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:hint="Your note here"
+                android:padding="10dp"
+                android:background="@drawable/bg_edit_text"
+                android:inputType="textMultiLine"
+                android:gravity="top|start"
+                android:minHeight="200dp"
+                android:layout_marginBottom="16dp"/>
+            <!-- Task items will be added here dynamically -->
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

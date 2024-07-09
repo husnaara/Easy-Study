@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center">
+
+    <View
+        android:id="@+id/top_view"
+        android:layout_width="265dp"
+        android:layout_marginTop="80dp"
+        android:layout_height="150dp"
+        android:background="@drawable/img" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="30dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+
+            <TextView
+                android:id="@+id/show_subject_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Show Subject"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="24dp" />
+
+            <TextView
+                android:id="@+id/subject_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Subject Name: "
+                android:layout_below="@id/show_subject_title"
+                android:layout_marginBottom="16dp"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/subject_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Subject Code: "
+                android:layout_below="@id/subject_name"
+                android:layout_marginBottom="16dp"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/subject_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Subject Description: "
+                android:layout_below="@id/subject_code"
+                android:layout_marginBottom="16dp"
+                android:textSize="18sp" />
+
+
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>

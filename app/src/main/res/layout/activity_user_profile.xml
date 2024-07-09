@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginStart="32dp"
+    android:layout_marginEnd="32dp"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".UserProfileActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="16dp"
+        android:text="Profile"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="246dp"
+        android:layout_height="147dp"
+        android:layout_marginBottom="16dp"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/baseline_account_circle_24" />
+    <Button
+        android:id="@+id/btnPickImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:text="Select Image"
+        android:drawableLeft="@drawable/ic_photo_camera_24"
+        android:backgroundTint="@color/purple"
+        android:layout_marginBottom="16dp"/>
+
+    <EditText
+        android:id="@+id/et_user_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="User Name"
+        android:drawableLeft="@drawable/ic_profile"
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:layout_marginBottom="16dp"/>
+
+
+    <EditText
+        android:id="@+id/et_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:drawableLeft="@drawable/ic_email"
+        android:inputType="textEmailAddress"
+        android:minHeight="48dp"
+        android:layout_marginBottom="16dp"/>
+
+
+    <EditText
+        android:id="@+id/et_age"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:hint="User Age"
+        android:drawableLeft="@drawable/ic_profile"
+        android:inputType="number"
+        android:minHeight="48dp" />
+
+</LinearLayout>
